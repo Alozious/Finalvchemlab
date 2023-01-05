@@ -18,14 +18,7 @@ import streamlit as st
 from rdkit.Chem import Draw
 from PIL import Image
 
-
-
-
-
-# run c:/Users/Bliss Play/Desktop/chemlabprototype/streamlittttt.py
-
-# running streamlit           streamlit run "c:/Users/NEXUS COMPUTERS/Desktop/Streamlit/streamlittttt.py"
-
+##################Generating 3Dmodel
 def show(smi, style='stick'):
     mol = Chem.MolFromSmiles(smi)
     mol = Chem.AddHs(mol)
@@ -46,7 +39,7 @@ def render_mol(xyz):
 col1, col2 = st.columns(2)
 
 with col1:
-    image = Image.open("C:/Users/f/Downloads/LOGO-NEW-DARK.png")
+    image = Image.open("images/LOGO-NEW-DARK.png")
     st.image(image, width=150)
 
 
